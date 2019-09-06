@@ -1,6 +1,5 @@
 import collection.mutable.Stack
 import org.scalatest._
-import scala.math.BigInt
 
 class FizzBuzzSpec extends FlatSpec with Matchers {
   "FizzBuzz" should "return Fizz for each multiple of 3" in {
@@ -36,7 +35,7 @@ class FizzBuzzSpec extends FlatSpec with Matchers {
   }
 
   "FizzBuzz" should "return input" in {
-    FizzBuzz.convert(BigInt(3000000001)) should be("3000000001": String)
+    FizzBuzz.convert(3000000001L) should be("3000000001": String)
   }
 }
 
