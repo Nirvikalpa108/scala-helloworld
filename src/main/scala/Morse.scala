@@ -6,8 +6,7 @@ object Morse {
     val letters = new Array[String](2)
     var output = ""
     input.split("").foreach(output += dictionary(_))
-    return output
     // push output into the empty array
-    // concatenate the completed array as appropriate
+    // concatenate all elements in the array
   }
 }
