@@ -3,7 +3,7 @@ import scala.collection.immutable.Map
 object Morse {
   def translate(input:String):String = {
     val dictionary = Map[String, String]("a" -> ".-", "n" -> "-.")
-    // create empty array of length = input.length
+    val letters = new Array[String](2)
     var output = ""
     input.split("").foreach(output += dictionary(_))
     return output
