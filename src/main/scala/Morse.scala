@@ -8,5 +8,6 @@ object Morse {
     input.split("").foreach(output += dictionary(_))
     // push output into the empty array
     // concatenate all elements in the array
+    ""
   }
 }
